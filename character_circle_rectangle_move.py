@@ -26,7 +26,7 @@ def run_circle():
 def run_rectangle():
     print('RECTANGLE')
 
-    for x in range(50,750+1,10):
+    for x in range(400,750+1,10):
         render_frame(x,90)
 
     for y in range(90,550+1,10):
@@ -37,12 +37,12 @@ def run_rectangle():
 
     for y in range(550,90-1,-10):
         render_frame(50,y)
-
-    pass
+        
+    for x in range(50,400+1,10):
+        render_frame(x,90)
 
 while True:
-    #run_circle()
+    run_circle()
     run_rectangle()
-    break
 
 close_canvas()
